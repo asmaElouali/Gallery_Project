@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('./partials/head.ejs') %>
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col">
+                    <a href="/listofAlbum" class="btn btn-primary">
+                        &lt;Retour
+                    </a>
+                    <h1>
+                        <%=title.title %>
+                    </h1>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col mt-4">
+                    <div class="card">
+                        <div class="body">
+                            <h5 class="card.title">Ajouter une image</h5>
+                            <form method="POST" action="" class="form-inline" enctype="multipart/form-data">
+                                <input type="file" name="image" class="form-control-file" />
+                                <button type="submit" class="btn btn-primary mt-3">Ajouter</button>
+                            </form>
+                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
+                <% titles.image.forEach((images , index)=>{ %>
+                <div class="col">
+                    <div class="card">
+                        <img src="\uploads\<%=titles._id %>\<%=images%>" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5>#<%=index%> <%= images %></h5>
+                            <a href="/album/<%=titles._id%>/delete/<%=index%>">Supprimer</a>
+                        </div>
+                    </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+        <%- include('./partials/scripts.ejs') %>
+</body>
+
+</html>

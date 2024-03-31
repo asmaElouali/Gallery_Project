@@ -1,0 +1,27 @@
+application :
+tap to pay 
+la difference entre credit card et tap to pay
+NFC : Tap to Pay
+c'est quoi la forme de Tap to pay 
+est qu'il ya la diffrence entre Tap to pay et credit card
+comment utilise tap to pay dans le monde 
+tap to pay lance sur iphone 
+paiement sans contact en utilisant app IOS
+les carte bancaires sont equipee de la technologie sans contact
+accepte credit card or debit card
+les informations de ce video:
+tap to pay peut utiliser pour payer en anywhere en utilisant app of apple 
+tap to pay : system de paiment 
+tap to pay is method of payment ?
+tap to Pay Stripe Payment Integration using Flutter on iOS 
+==================================================================
+Ecran de la transaction: Cet écran devrait inclure des instructions claires sur la façon d'utiliser Tap to Pay et un bouton pour démarrer le processus de paiement
+Interface de paiement: Cet écran devrait inclure des instructions claires sur la façon d'utiliser Tap to Pay et un bouton pour démarrer le processus de paiement
+Affichage du montant et des détails de la transaction: affichez le montant total de la transaction et tous les détails pertinents, tels que la liste des articles achetés ou la raison de la transaction.
+Confirmation de la transaction:Cela peut inclure un message de confirmation et un résumé de la transaction.
+
+==========================
+Pixel 7 API 30
+Android 11.0 Google Play x86
+
+

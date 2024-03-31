@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('./partials/head.ejs') %>
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col">
+                    <h1>Mes albums</h1>
+                    <a href="/albums/create" class="btn btn-primary mt-2 mb-4">
+                        Nouvel album
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-xs-12 col-sm-4">
+                    <ul class="list-group">
+                        <%titles.forEach((tit) => { %>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="/album/<%=tit._id %>" style="text-decoration: none;"><%=tit.title%> <%= tit.image.length %></a>
+                            <a class="link-light badge bg-danger rounded-pill" style="text-decoration: none;" href="/album/<%=tit._id%>/delete">Supprimer</a>
+                        </li>
+                        <%});%>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <%- include('./partials/scripts.ejs') %>
+</body>
+
+</html>
